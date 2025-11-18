@@ -1,0 +1,158 @@
+// ====================================
+// Fonts
+// ====================================
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// ====================================
+// Variables
+// ====================================
+$primary-color: #0d2c4a;
+$secondary-color: #3d5a76;
+$accent-color: #008fa8;
+$white-color: #ffffff;
+$light-gray-color: #f8f9fa;
+$text-color: #6c757d;
+$dark-text: #343a40;
+
+$font-family: 'Poppins', sans-serif;
+
+// ====================================
+// Footer
+// ====================================
+.footer {
+    background-color: $primary-color;
+    color: rgba(255,255,255,0.8);
+    padding-top: 80px;
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        gap: 40px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    h3 {
+        color: $white-color;
+        margin-bottom: 25px;
+    }
+    
+    .footer-about .socials {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        a {
+            color: $white-color;
+            width: 40px;
+            height: 40px;
+            background: $secondary-color;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            &:hover {
+                background: $accent-color;
+            }
+        }
+    }
+    
+    .footer-links ul li a {
+        color: rgba(255,255,255,0.8);
+        display: block;
+        margin-bottom: 12px;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    
+    .footer-contact p {
+        margin-bottom: 15px;
+        i {
+            margin-right: 10px;
+        }
+    }
+    .footer-contact .btn {
+        background: $accent-color;
+    }
+
+    .footer-bottom {
+        padding: 25px 0;
+        text-align: center;
+        p {
+            color: rgba(255,255,255,0.6);
+        }
+    }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .header .nav-menu, .header .header-socials { display: none; }
+    
+    .header .hamburger {
+        display: block;
+    }
+
+    .header .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .header .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .header .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .header .nav-menu {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background: $white-color;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .header .nav-menu.active {
+        display: flex;
+        max-height: 500px;
+        li {
+            width: 100%;
+            text-align: center;
+            a {
+                display: block;
+                padding: 15px 0;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    }
+
+    .hero .container { flex-direction: column; text-align: center; }
+    .hero .hero-stats { justify-content: center; }
+    
+    .features .container { grid-template-columns: repeat(2, 1fr); transform: translateY(0); }
+    .features .feature-card.active { transform: translateY(0); }
+    
+    .about-us .container { grid-template-columns: 1fr; }
+    .about-images { margin-bottom: 50px; }
+    
+    .partners .container { flex-direction: column; text-align: center; }
+    
+    .services .service-cards { grid-template-columns: 1fr; }
+    
+    .process .process-steps { flex-direction: column; }
+    .process .arrow { display: none; }
+    .process .step { margin: 15px 0; }
+    
+    .testimonial .testimonial-content { flex-direction: column; }
+    
+    .blog .blog-posts { grid-template-columns: 1fr; }
+
+    .footer .footer-top { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem !important; }
+    h2 { font-size: 2rem !important; }
+    
+    .features .container { grid-template-columns: 1fr; }
+    
+    .footer .footer-top { grid-template-columns: 1fr; }
+}
