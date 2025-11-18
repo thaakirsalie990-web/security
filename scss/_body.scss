@@ -56,15 +56,17 @@ $font-family: 'Poppins', sans-serif;
 .about-us {
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
+
     .about-images {
         position: relative;
+
         .about-img-1 {
             border-radius: 15px;
             width: 80%;
+
         }
         .about-img-2 {
             position: absolute;
@@ -75,7 +77,9 @@ $font-family: 'Poppins', sans-serif;
             border: 5px solid $white-color;
         }
     }
+
     .about-content, .why-choose-us {
+        
         h2, h3 {
             font-size: 2.2rem;
             margin-bottom: 20px;
@@ -84,6 +88,7 @@ $font-family: 'Poppins', sans-serif;
             margin-bottom: 20px;
         }
     }
+
     .why-choose-us {
         background: $light-gray-color;
         padding: 40px;
@@ -108,14 +113,17 @@ $font-family: 'Poppins', sans-serif;
 // ====================================
 .partners {
     background-color: $light-gray-color;
+
     .container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: 30px;
     }
     .partner-text {
         flex: 1;
+
         h3 {
             font-size: 2rem;
             margin-bottom: 10px;
@@ -125,6 +133,9 @@ $font-family: 'Poppins', sans-serif;
         display: flex;
         gap: 40px;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
         filter: grayscale(100%);
         opacity: 0.6;
     }
@@ -134,6 +145,7 @@ $font-family: 'Poppins', sans-serif;
 // Services Section
 // ====================================
 .services {
+
     .service-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -150,21 +162,29 @@ $font-family: 'Poppins', sans-serif;
             color: $accent-color;
             margin-bottom: 20px;
         }
+
         h3 {
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
+
         p {
             margin-bottom: 25px;
         }
+
         &.active {
             background-color: $secondary-color;
             color: $white-color;
+
             h3 { color: $white-color; }
+
             i { color: $white-color; }
+
             p { color: rgba(255,255,255,0.8); }
+
             .btn {
                 background-color: $primary-color;
+
                 &:hover { background-color: $accent-color; }
             }
         }
@@ -175,19 +195,23 @@ $font-family: 'Poppins', sans-serif;
 // Process Section
 // ====================================
 .process {
+
     background-color: $light-gray-color;
+
     .process-steps {
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: center;
     }
+
     .step {
         background-color: $white-color;
         padding: 30px;
         border-radius: 10px;
         flex: 1;
         margin: 0 20px;
+
         .step-icon {
             width: 80px;
             height: 80px;
@@ -196,25 +220,33 @@ $font-family: 'Poppins', sans-serif;
             display: grid;
             place-items: center;
             margin: 0 auto 20px;
+
             i {
                 font-size: 2.5rem;
                 color: $accent-color;
             }
         }
+
         h3 {
             margin-bottom: 10px;
         }
+
         &.active {
             background-color: $secondary-color;
             color: $white-color;
+
             h3 { color: $white-color; }
+
             p { color: rgba(255,255,255,0.8); }
+
             .step-icon {
                 background-color: $primary-color;
+
                 i { color: $white-color; }
             }
         }
     }
+
     .arrow {
         font-size: 2.5rem;
         color: $accent-color;
@@ -225,48 +257,60 @@ $font-family: 'Poppins', sans-serif;
 // Tesimonial Section
 // ====================================
 .testimonial {
+
     .testimonial-header {
         max-width: 600px;
+
         h2 { font-size: 2.5rem; }
     }
+
     .testimonial-content {
         display: flex;
         align-items: center;
         gap: 50px;
         margin-top: 40px;
+
         img { border-radius: 10px; }
+
         .testimonial-quote {
             background-color: $primary-color;
             color: $white-color;
             padding: 50px;
             border-radius: 10px;
             position: relative;
+
             .stars {
                 color: #f39c12;
                 margin-bottom: 20px;
             }
+
             p {
                 margin-bottom: 30px;
                 font-style: italic;
                 color: rgba(255,255,255,0.8);
             }
+
             .client {
                 display: flex;
                 align-items: center;
                 gap: 15px;
+
                 img {
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
                 }
+
                 h4 {
                     color: $white-color;
                     margin: 0;
                 }
+
                 span {
                     font-size: 0.9rem;
                     color: rgba(255,255,255,0.7);
                 }
+
             }
             .quote-icon {
                 position: absolute;
@@ -286,11 +330,13 @@ $font-family: 'Poppins', sans-serif;
 // ====================================
 .blog {
     background: $light-gray-color;
+
     .blog-posts {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
+
     .post {
         background: $white-color;
         border-radius: 10px;
@@ -299,6 +345,7 @@ $font-family: 'Poppins', sans-serif;
 
         .post-image {
             position: relative;
+
             .date {
                 position: absolute;
                 bottom: 10px;
@@ -309,6 +356,7 @@ $font-family: 'Poppins', sans-serif;
                 border-radius: 8px;
                 text-align: center;
                 line-height: 1;
+
                 span {
                     font-size: 1.8rem;
                     font-weight: 700;
@@ -316,19 +364,24 @@ $font-family: 'Poppins', sans-serif;
                 }
             }
         }
+
         .post-content {
             padding: 25px;
+
             span {
                 font-size: 0.9rem;
                 color: $text-color;
+
                 i {
                     margin-right: 5px;
                 }
             }
+
             h3 {
                 margin: 10px 0;
                 font-size: 1.4rem;
             }
+
             a {
                 font-weight: 600;
                 color: $accent-color;

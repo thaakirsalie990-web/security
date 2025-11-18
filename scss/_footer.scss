@@ -124,7 +124,7 @@ $font-family: 'Poppins', sans-serif;
         }
     }
 
-    .hero .container { flex-direction: column; text-align: center; }
+    .hero .container { flex-direction: column-reverse; text-align: center; }
     .hero .hero-stats { justify-content: center; }
     
     .features .container { grid-template-columns: repeat(2, 1fr); transform: translateY(0); }
@@ -133,7 +133,7 @@ $font-family: 'Poppins', sans-serif;
     .about-us .container { grid-template-columns: 1fr; }
     .about-images { margin-bottom: 50px; }
     
-    .partners .container { flex-direction: column; text-align: center; }
+    .partners .container { text-align: center; }
     
     .services .service-cards { grid-template-columns: 1fr; }
     

@@ -131,6 +131,7 @@ section {
         font-size: 1.8rem;
         font-weight: 700;
         color: $primary-color;
+
         span {
             color: $accent-color;
         }
@@ -144,6 +145,7 @@ section {
     .nav-link {
         font-weight: 500;
         transition: color 0.3s ease;
+
         &:hover {
             color: $accent-color;
         }
@@ -155,6 +157,7 @@ section {
     .header-socials {
         display: flex;
         gap: 15px;
+
         a {
             color: $primary-color;
             &:hover { color: $accent-color; }
@@ -164,6 +167,7 @@ section {
     .hamburger {
         display: none;
         cursor: pointer;
+
         .bar {
             display: block;
             width: 25px;
@@ -179,8 +183,12 @@ section {
 // Hero Section
 // ====================================
 .hero {
-    background: $light-gray-color;
+    background-image: linear-gradient(rgba($light-gray-color, 0.9), rgba($light-gray-color, 0.9)), url('/images/fence-1073604_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 100px 0;
+
     .container {
         display: flex;
         align-items: center;
@@ -189,10 +197,22 @@ section {
 
     .hero-content {
         flex: 1;
+        padding: 50px;
+
         h1 {
             font-size: 3.5rem;
             line-height: 1.2;
             margin-bottom: 20px;
+
+            .text-color {
+                color: $secondary-color;
+            }
+
+            .you-underline {
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-thickness: 1px;
+            }
         }
         p {
             margin-bottom: 30px;
@@ -203,10 +223,13 @@ section {
     .hero-stats {
         display: flex;
         gap: 40px;
+
         div {
             h2 {
                 font-size: 2.5rem;
                 color: $primary-color;
+
+                
             }
             p {
                 font-size: 1rem;
@@ -218,24 +241,26 @@ section {
     .hero-image {
         flex: 0 0 45%;
         position: relative;
+
         img {
-            border-radius: 20px;
+            border-radius: 60%;
             width: 100%;
         }
         .play-btn {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
+            top: 80%;
+            right: 87%;
+            transform: translate(50%, -50%);
+            width: 150px;
+            height: 150px;
             background: $white-color;
             border-radius: 50%;
             display: grid;
             place-items: center;
             color: $primary-color;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
             &:hover {
                 background-color: $accent-color;
                 color: $white-color;
