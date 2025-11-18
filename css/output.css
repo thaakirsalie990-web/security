@@ -6,32 +6,46 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   transform: translateY(-50px);
+  background-color: #3d5a76;
+  margin: 25px auto;
+  border-radius: 20px;
+  overflow: visible;
 }
-.features .feature-card {
-  background: #ffffff;
+.features .card-wrapper {
+  position: relative;
+}
+.features .card-wrapper .feature-card {
+  color: #ffffff;
   padding: 30px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
-.features .feature-card i {
+.features .card-wrapper .feature-card i {
   font-size: 2.5rem;
   color: #008fa8;
   margin-bottom: 15px;
 }
-.features .feature-card h3 {
+.features .card-wrapper .feature-card h3 {
   margin-bottom: 10px;
 }
-.features .feature-card.active {
+.features .card-wrapper .feature-card.active {
   background-color: #0d2c4a;
   color: #ffffff;
-  transform: translateY(-20px);
+  transform: translateY(-30px);
 }
-.features .feature-card.active h3 {
+.features .card-wrapper .feature-card.active h3 {
   color: #ffffff;
 }
-.features .feature-card.active p {
+.features .card-wrapper .feature-card.active p {
   color: rgba(255, 255, 255, 0.8);
+}
+.features .card-wrapper .feature-card.active {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
 }
 
 .about-us .container {
