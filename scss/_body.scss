@@ -173,6 +173,23 @@ $font-family: 'Poppins', sans-serif;
 // ====================================
 .services {
 
+    .container {
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+
+            h2 {
+                font-size: 3rem;
+                font-weight: bolder;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
     .service-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -181,7 +198,7 @@ $font-family: 'Poppins', sans-serif;
     .service-card {
         padding: 40px;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 50%;
         background: $light-gray-color;
 
         i {
@@ -202,6 +219,7 @@ $font-family: 'Poppins', sans-serif;
         &.active {
             background-color: $secondary-color;
             color: $white-color;
+            box-shadow: $white-color 1px 1px 1px 1px ;
 
             h3 { color: $white-color; }
 

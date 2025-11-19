@@ -124,6 +124,18 @@
   opacity: 0.6;
 }
 
+.services .container .section-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+.services .container .section-header h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.services .container .section-header p {
+  font-size: 1.2rem;
+}
 .services .service-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -132,7 +144,7 @@
 .services .service-card {
   padding: 40px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50%;
   background: #f8f9fa;
 }
 .services .service-card i {
@@ -150,6 +162,7 @@
 .services .service-card.active {
   background-color: #3d5a76;
   color: #ffffff;
+  box-shadow: #ffffff 1px 1px 1px 1px;
 }
 .services .service-card.active h3 {
   color: #ffffff;
