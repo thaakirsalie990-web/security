@@ -151,6 +151,7 @@ $font-family: 'Poppins', sans-serif;
 
     .about-images {
         position: relative;
+        overflow: visible;
 // ==============================
         .about-img-1 {
             border-radius: 15px;
@@ -170,14 +171,36 @@ $font-family: 'Poppins', sans-serif;
     .partners .container { text-align: center; }
     
     .services .service-cards { grid-template-columns: 1fr; }
+    .services .container .section-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-cards .service-card {
+        border-radius: 20px;
+    }
     
     .process .process-steps { flex-direction: column; }
     .process .arrow { display: none; }
     .process .step { margin: 15px 0; }
     
     .testimonial .testimonial-content { flex-direction: column; }
+    .testimonial .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testimonial-header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
     
     .blog .blog-posts { grid-template-columns: 1fr; }
+    .blog-posts .post {
+        display: flex;
+    }
 
     .footer .footer-top { grid-template-columns: 1fr 1fr; }
 }

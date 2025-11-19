@@ -130,7 +130,7 @@
   text-align: start;
 }
 .services .container .section-header h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 .services .container .section-header p {
@@ -234,7 +234,9 @@
 }
 
 .testimonial .testimonial-header {
-  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 .testimonial .testimonial-header h2 {
   font-size: 2.5rem;
@@ -689,6 +691,7 @@ section {
   }
   .about-images {
     position: relative;
+    overflow: visible;
   }
   .about-images .about-img-1 {
     border-radius: 15px;
@@ -708,6 +711,13 @@ section {
   .services .service-cards {
     grid-template-columns: 1fr;
   }
+  .services .container .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-cards .service-card {
+    border-radius: 20px;
+  }
   .process .process-steps {
     flex-direction: column;
   }
@@ -720,8 +730,23 @@ section {
   .testimonial .testimonial-content {
     flex-direction: column;
   }
+  .testimonial .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimonial-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
   .blog .blog-posts {
     grid-template-columns: 1fr;
+  }
+  .blog-posts .post {
+    display: flex;
   }
   .footer .footer-top {
     grid-template-columns: 1fr 1fr;
