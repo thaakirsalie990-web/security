@@ -79,20 +79,17 @@ $font-family: 'Poppins', sans-serif;
     }
 
     .about-images {
-        position: relative;
+        overflow: hidden;
+        max-height: 400px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
 
-        .about-img-1 {
-            border-radius: 15px;
-            width: 80%;
-
-        }
+        .about-img-1,
         .about-img-2 {
-            position: absolute;
-            bottom: -30px;
-            right: 0;
-            width: 60%;
-            border-radius: 15px;
-            border: 5px solid $white-color;
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            max-height: 200px;
         }
     }
 
@@ -107,6 +104,17 @@ $font-family: 'Poppins', sans-serif;
         }
     }
 
+        .about-content {
+            background-color: $secondary-color;
+            padding: 30px;
+            border-radius: 20px;
+
+            p {
+                color: $white-color;
+            }
+        }
+    
+
     .why-choose-us {
         background: $light-gray-color;
         padding: 40px;
@@ -116,6 +124,7 @@ $font-family: 'Poppins', sans-serif;
                 margin-bottom: 15px;
                 font-weight: 500;
                 color: $dark-text;
+
                 i {
                     color: $accent-color;
                     margin-right: 10px;
