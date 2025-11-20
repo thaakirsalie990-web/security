@@ -201,6 +201,7 @@
   height: 80px;
   background-color: #f8f9fa;
   border-radius: 50%;
+  aspect-ratio: 1/1;
   display: grid;
   place-items: center;
   margin: 0 auto 20px;
@@ -349,6 +350,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -686,24 +691,27 @@ section {
   .about-us .container {
     grid-template-columns: 1fr;
   }
-  .about-images {
-    margin-bottom: 50px;
-  }
-  .about-images {
+  .about-us .about-images {
     position: relative;
     overflow: visible;
+    max-height: none;
+    margin-bottom: 50px;
   }
-  .about-images .about-img-1 {
-    border-radius: 15px;
+  .about-us .about-images .about-img-1 {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
     width: 80%;
+    max-height: none;
   }
-  .about-images .about-img-2 {
+  .about-us .about-images .about-img-2 {
     position: absolute;
     bottom: -30px;
     right: 0;
     width: 60%;
-    border-radius: 15px;
-    border: 5px solid #ffffff;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: 1px solid #ffffff;
+    max-height: none;
   }
   .partners .container {
     text-align: center;
